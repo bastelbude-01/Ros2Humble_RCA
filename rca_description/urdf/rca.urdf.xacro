@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="rca">
+
+
+    <!-- Erst Material Laden -->
+    <xacro:include filename="material.xacro"/>
+
+    <!--  dann die STL Files zum visualisieren -->
+    <xacro:include filename="robot.xacro"/>
+
+    <!-- Laden der Gelenke -->
+    <xacro:include filename="joints.xacro"/>
+    
+    <!-- Gazebo plugins -->
+    <xacro:include filename="gazebo.xacro"/> 
+
+    <!-- ROS2_Control -->
+    <xacro:include filename="ros2_control.xacro"/> 
+
+
+
+
+
+    
+</robot>

@@ -1,0 +1,156 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+
+    <!-- LINKS -->
+    <link name="world" />
+
+    <link name="base_link">
+        <xacro:default_inertial mass="3" />
+        <visual>
+            <origin xyz="0.0 0.0 -0.065" rpy="0.0 0.0 ${pi}" />
+            <geometry>
+                <mesh filename="package://rca_description/meshes/RCA_BASE_TOWER4URDF.stl"
+                    scale="0.001 0.001 0.001" />
+            </geometry>
+            <material name="blue" />
+        </visual>
+        <collision>
+            <origin xyz="0.0 0.0 -0.065" rpy="0.0 0.0 ${pi}" />
+            <geometry>
+                <mesh filename="package://rca_description/meshes/RCA_BASE_TOWER4URDF.stl"
+                    scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="base_plate">
+        <xacro:default_inertial mass="0.5" />
+        <visual>
+            <origin xyz="0.0 0.0 0" rpy="${pi/2} 0.0 ${-pi/2}" />
+            <geometry>
+                <mesh filename="package://rca_description/meshes/Waist.stl"
+                    scale="0.001 0.001 0.001" />
+            </geometry>
+            <material name="blue" />
+        </visual>
+        <collision>
+            <origin xyz="0.0 0.0 0" rpy="${pi/2} 0.0 ${-pi/2}" />
+            <geometry>
+                <mesh filename="package://rca_description/meshes/Waist.stl"
+                    scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="arm_1">
+        <xacro:default_inertial mass="0.3" />
+        <visual>
+            <origin xyz="0.0 -0.001 0" rpy="${pi/2} 0 0" />
+            <geometry>
+                <mesh filename="package://rca_description/meshes/Arm_01.stl"
+                    scale="0.001 0.001 0.001" />
+            </geometry>
+            <material name="white" />
+        </visual>
+        <collision>
+            <origin xyz="0.0 -0.001 0" rpy="${pi/2} 0 0" />
+            <geometry>
+                <mesh filename="package://rca_description/meshes/Arm_01.stl"
+                    scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="arm_2">
+        <xacro:default_inertial mass="0.3" />
+        <visual>
+            <origin xyz="0 0.0018 0.035" rpy="${pi/2} 0 ${pi}" />
+            <geometry>
+                <mesh filename="package://rca_description/meshes/Arm_02.stl"
+                    scale="0.001 0.001 0.001" />
+            </geometry>
+            <material name="white" />
+        </visual>
+        <origin xyz="0 0.0018 0.035" rpy="${pi/2} 0 ${pi}" />
+        <geometry>
+            <mesh filename="package://rca_description/meshes/Arm_02.stl"
+                scale="0.001 0.001 0.001" />
+        </geometry>
+    </link>
+
+    <link name="arm_3">
+        <xacro:default_inertial mass="0.2" />
+        <visual>
+            <origin xyz="-0.0035 0 0.0015" rpy="${pi/2} 0 ${pi}" />
+            <geometry>
+                <mesh filename="package://rca_description/meshes/Arm_03.stl"
+                    scale="0.001 0.001 0.001" />
+            </geometry>
+            <material name="white" />
+        </visual>
+        <collision>
+            <origin xyz="-0.0035 0 0.0015" rpy="${pi/2} 0 ${pi}" />
+            <geometry>
+                <mesh filename="package://rca_description/meshes/Arm_03.stl"
+                    scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="claw_support">
+        <xacro:default_inertial mass="0.2" />
+        <visual>
+            <origin xyz="0.0095 0.005 0.063" rpy="0 0 ${-pi/2}" />
+            <geometry>
+                <mesh filename="package://rca_description/meshes/Gripper_base.stl"
+                    scale="0.001 0.001 0.001" />
+            </geometry>
+            <material name="blue" />
+        </visual>
+        <origin xyz="0.0095 0.005 0.063" rpy="0 0 ${-pi/2}" />
+        <geometry>
+            <mesh filename="package://rca_description/meshes/Gripper_base.stl"
+                scale="0.001 0.001 0.001" />
+        </geometry>
+    </link>
+
+    <link name="gripper_right">
+        <xacro:default_inertial mass="0.1" />
+        <visual>
+            <origin xyz="0 -0.003 -0.0065" rpy="${-pi/8} ${pi} 0" />
+            <geometry>
+                <mesh filename="package://rca_description/meshes/Gripper_1.stl"
+                    scale="0.001 0.001 0.001" />
+            </geometry>
+            <material name="white" />
+        </visual>
+        <collision>
+            <origin xyz="0 -0.003 -0.0065" rpy="${-pi/8} ${pi} 0" />
+            <geometry>
+                <mesh filename="package://rca_description/meshes/Gripper_1.stl"
+                    scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="gripper_left">
+        <xacro:default_inertial mass="0.1" />
+        <visual>
+            <origin xyz="-0.008 0.003 -0.0063" rpy="${-pi/8} ${pi} ${pi}" />
+            <geometry>
+                <mesh filename="package://rca_description/meshes/Gripper_1_1.stl"
+                    scale="0.001 0.001 0.001" />
+            </geometry>
+            <material name="white" />
+        </visual>
+        <collision>
+            <origin xyz="-0.008 0.003 -0.0063" rpy="${-pi/8} ${pi} ${pi}" />
+            <geometry>
+                <mesh filename="package://rca_description/meshes/Gripper_1_1.stl"
+                    scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+
+</robot>
