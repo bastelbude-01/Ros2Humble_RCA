@@ -5,8 +5,40 @@
         <plugin filename="libgazebo_ros2_control.so" name="gazebo_ros2_control" >
             <robot_param>robot_description</robot_param>
             <robot_param_node>robot_state_publisher</robot_param_node>
-            <parameters></parameters>
+            <parameters>$(find rca_controller)/config/rca_controllers.yaml</parameters>
         </plugin>
+    </gazebo>
+
+    <gazebo reference="base_link">
+        <material>Gazebo/Black</material>
+    </gazebo>
+
+    <gazebo reference="base_plate">
+        <material>Gazebo/Blue</material>
+    </gazebo>
+
+    <gazebo reference="arm_1">
+        <material>Gazebo/White</material>
+    </gazebo>
+
+    <gazebo reference="arm_2">
+        <material>Gazebo/White</material>
+    </gazebo>
+
+    <gazebo reference="arm_3">
+        <material>Gazebo/White</material>
+    </gazebo>    
+
+    <gazebo reference="claw_support">
+        <material>Gazebo/Black</material>
+    </gazebo>
+
+    <gazebo reference="gripper_right">
+        <material>Gazebo/Green</material>
+    </gazebo>
+
+    <gazebo reference="gripper_left">
+        <material>Gazebo/Red</material>
     </gazebo>
     
 </robot>
