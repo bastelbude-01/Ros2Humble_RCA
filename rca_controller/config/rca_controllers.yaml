@@ -6,7 +6,7 @@ controller_manager:
       type: joint_trajectory_controller/JointTrajectoryController
 
     # gripper_controller:
-    #   type: forward_command_controller/ForwardCommandController
+    #  type: forward_command_controller/ForwardCommandController
 
     gripper_controller:
       type: joint_trajectory_controller/JointTrajectoryController
@@ -37,7 +37,7 @@ gripper_controller:
     joints:
       - joint_6
 
-    # interface_name: position
+    interface_name: position
       
     command_interfaces:
       - position
