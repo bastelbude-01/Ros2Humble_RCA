@@ -1,0 +1,25 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: rca_description
+    relative_path: urdf/rca.urdf.xacro
+  srdf:
+    relative_path: config/rca.srdf
+  package_settings:
+    author_name: RoboticPadawan
+    author_email: mod3llfr3ak1mg3ist@web.de
+    generated_timestamp: 1705193853
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
