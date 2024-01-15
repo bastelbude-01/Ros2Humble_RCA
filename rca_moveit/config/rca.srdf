@@ -5,19 +5,19 @@
     
     <group name="arm">
         <joint name="virtual"/>
-
         <joint name="joint_1"/>
         <joint name="joint_2"/>
         <joint name="joint_3"/>
         <joint name="joint_4"/>
-
         <joint name="joint_5"/>
 
     </group>
 
     <group name="gripper">
-        <joint name="joint_6"/>
-        <joint name="joint_7"/>
+        <link name="gripper_right"/>
+        <link name="gripper_left"/>
+    <!--    <joint name="joint_6"/>
+        <joint name="joint_7"/> -->
     </group>
 
 
