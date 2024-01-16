@@ -8,7 +8,7 @@
     <link name="base_link">
         <xacro:default_inertial mass="3" />
         <visual>
-            <origin xyz="0.0 0.0 -0.065" rpy="0.0 0.0 ${pi}" />
+            <origin xyz="0.0 0.0 -0.065" rpy="0.0 0.0 ${PI}" />
             <geometry>
                 <mesh filename="package://rca_description/meshes/RCA_BASE_TOWER4URDF.stl"
                     scale="0.001 0.001 0.001" />
@@ -16,7 +16,7 @@
             <material name="blue" />
         </visual>
         <collision>
-            <origin xyz="0.0 0.0 -0.065" rpy="0.0 0.0 ${pi}" />
+            <origin xyz="0.0 0.0 -0.065" rpy="0.0 0.0 ${PI}" />
             <geometry>
                 <mesh filename="package://rca_description/meshes/RCA_BASE_TOWER4URDF.stl"
                     scale="0.001 0.001 0.001" />
@@ -27,7 +27,7 @@
     <link name="base_plate">
         <xacro:default_inertial mass="0.5" />
         <visual>
-            <origin xyz="0.0 0.0 0" rpy="${pi/2} 0.0 ${-pi/2}" />
+            <origin xyz="0.0 0.0 0" rpy="${PI/2} 0.0 ${-PI/2}" />
             <geometry>
                 <mesh filename="package://rca_description/meshes/Waist.stl"
                     scale="0.001 0.001 0.001" />
@@ -35,7 +35,7 @@
             <material name="blue" />
         </visual>
         <collision>
-            <origin xyz="0.0 0.0 0" rpy="${pi/2} 0.0 ${-pi/2}" />
+            <origin xyz="0.0 0.0 0" rpy="${PI/2} 0.0 ${-PI/2}" />
             <geometry>
                 <mesh filename="package://rca_description/meshes/Waist.stl"
                     scale="0.001 0.001 0.001" />
@@ -46,7 +46,7 @@
     <link name="arm_1">
         <xacro:default_inertial mass="0.3" />
         <visual>
-            <origin xyz="0.0 -0.001 0" rpy="${pi/2} 0 0" />
+            <origin xyz="0.0 -0.001 0" rpy="${PI/2} 0 0" />
             <geometry>
                 <mesh filename="package://rca_description/meshes/Arm_01.stl"
                     scale="0.001 0.001 0.001" />
@@ -54,7 +54,7 @@
             <material name="white" />
         </visual>
         <collision>
-            <origin xyz="0.0 -0.001 0" rpy="${pi/2} 0 0" />
+            <origin xyz="0.0 -0.001 0" rpy="${PI/2} 0 0" />
             <geometry>
                 <mesh filename="package://rca_description/meshes/Arm_01.stl"
                     scale="0.001 0.001 0.001" />
@@ -65,7 +65,7 @@
     <link name="arm_2">
         <xacro:default_inertial mass="0.3" />
         <visual>
-            <origin xyz="0 0.0018 0.035" rpy="${pi/2} 0 ${pi}" />
+            <origin xyz="0 0.0018 0.035" rpy="${PI/2} 0 ${PI}" />
             <geometry>
                 <mesh filename="package://rca_description/meshes/Arm_02.stl"
                     scale="0.001 0.001 0.001" />
@@ -73,7 +73,7 @@
             <material name="white" />
         </visual>
         <collision>
-            <origin xyz="0 0.0018 0.035" rpy="${pi/2} 0 ${pi}" />
+            <origin xyz="0 0.0018 0.035" rpy="${PI/2} 0 ${PI}" />
             <geometry>
                 <mesh filename="package://rca_description/meshes/Arm_02.stl"
                 scale="0.001 0.001 0.001" />
@@ -84,7 +84,7 @@
     <link name="arm_3">
         <xacro:default_inertial mass="0.2" />
         <visual>
-            <origin xyz="-0.0035 0 0.0015" rpy="${pi/2} 0 ${pi}" />
+            <origin xyz="-0.0035 0 0.0015" rpy="${PI/2} 0 ${PI}" />
             <geometry>
                 <mesh filename="package://rca_description/meshes/Arm_03.stl"
                     scale="0.001 0.001 0.001" />
@@ -92,7 +92,7 @@
             <material name="white" />
         </visual>
         <collision>
-            <origin xyz="-0.0035 0 0.0015" rpy="${pi/2} 0 ${pi}" />
+            <origin xyz="-0.0035 0 0.0015" rpy="${PI/2} 0 ${PI}" />
             <geometry>
                 <mesh filename="package://rca_description/meshes/Arm_03.stl"
                     scale="0.001 0.001 0.001" />
@@ -103,7 +103,7 @@
     <link name="claw_support">
         <xacro:default_inertial mass="0.2" />
         <visual>
-            <origin xyz="0.0095 0.005 0.063" rpy="0 0 ${-pi/2}" />
+            <origin xyz="0.0095 0.005 0.063" rpy="0 0 ${-PI/2}" />
             <geometry>
                 <mesh filename="package://rca_description/meshes/Gripper_base.stl"
                     scale="0.001 0.001 0.001" />
@@ -111,7 +111,7 @@
             <material name="blue" />
         </visual>
         <collision>
-            <origin xyz="0.0095 0.005 0.063" rpy="0 0 ${-pi/2}" />
+            <origin xyz="0.0095 0.005 0.063" rpy="0 0 ${-PI/2}" />
             <geometry>
                 <mesh filename="package://rca_description/meshes/Gripper_base.stl"
                 scale="0.001 0.001 0.001" />
@@ -122,7 +122,7 @@
     <link name="gripper_right">
         <xacro:default_inertial mass="0.1" />
         <visual>
-            <origin xyz="0 -0.003 -0.0065" rpy="${-pi/8} ${pi} 0" />
+            <origin xyz="0 -0.003 -0.0065" rpy="${-PI/8} ${PI} 0" />
             <geometry>
                 <mesh filename="package://rca_description/meshes/Gripper_1.stl"
                     scale="0.001 0.001 0.001" />
@@ -130,7 +130,7 @@
             <material name="white" />
         </visual>
         <collision>
-            <origin xyz="0 -0.003 -0.0065" rpy="${-pi/8} ${pi} 0" />
+            <origin xyz="0 -0.003 -0.0065" rpy="${-PI/8} ${PI} 0" />
             <geometry>
                 <mesh filename="package://rca_description/meshes/Gripper_1.stl"
                     scale="0.001 0.001 0.001" />
@@ -141,7 +141,7 @@
     <link name="gripper_left">
         <xacro:default_inertial mass="0.1" />
         <visual>
-            <origin xyz="-0.008 0.003 -0.0063" rpy="${-pi/8} ${pi} ${pi}" />
+            <origin xyz="-0.008 0.003 -0.0063" rpy="${-PI/8} ${PI} ${PI}" />
             <geometry>
                 <mesh filename="package://rca_description/meshes/Gripper_1_1.stl"
                     scale="0.001 0.001 0.001" />
@@ -149,7 +149,7 @@
             <material name="white" />
         </visual>
         <collision>
-            <origin xyz="-0.008 0.003 -0.0063" rpy="${-pi/8} ${pi} ${pi}" />
+            <origin xyz="-0.008 0.003 -0.0063" rpy="${-PI/8} ${PI} ${PI}" />
             <geometry>
                 <mesh filename="package://rca_description/meshes/Gripper_1_1.stl"
                     scale="0.001 0.001 0.001" />
@@ -173,7 +173,7 @@
 
     <!-- JOINTS  Virual or fixed-->
 
-    <joint name="virtual" type="fixed">
+    <joint name="virtual_joint" type="fixed">
         <parent link="world" />
         <child link="base_link" />
         <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
@@ -185,7 +185,7 @@
         <parent link="base_link" />
         <child link="base_plate" />
         <axis xyz="0 0 1" />
-        <limit lower="-${pi/2}" upper="${pi/2}" velocity="${velocity}" effort="${effort}" />
+        <limit lower="-${PI/2}" upper="${PI/2}" velocity="${velocity}" effort="${effort}" />
         <origin xyz="0 0 0.129" rpy="0 0 0" />
     </joint>
 
@@ -193,7 +193,7 @@
         <parent link="base_plate" />
         <child link="arm_1" />
         <axis xyz="0 1 0 " />
-        <limit lower="-${pi/4}" upper="${pi/4}"  velocity="${velocity}" effort="${effort}" />
+        <limit lower="-${PI/4}" upper="${PI/4}"  velocity="${velocity}" effort="${effort}" />
         <origin xyz="0.014 0.004 0.04" rpy="0 0 0" />
     </joint>
 
@@ -201,7 +201,7 @@
         <parent link="arm_1" />
         <child link="arm_2" />
         <axis xyz="0 1 0 " />
-        <limit lower="0" upper="${pi/2}"  velocity="${velocity}" effort="${effort}" />
+        <limit lower="-${PI/6}" upper="${PI/2}"  velocity="${velocity}" effort="${effort}" />
         <origin xyz="0 0 0.12" rpy="0 0 0" />
     </joint>
 
@@ -209,7 +209,7 @@
         <parent link="arm_2" />
         <child link="arm_3" />
         <axis xyz="0 0 1 " />
-        <limit lower="-${pi/4}" upper="${pi/4}"  velocity="${velocity}" effort="${effort}" />
+        <limit lower="-${PI/4}" upper="${PI/4}"  velocity="${velocity}" effort="${effort}" />
         <origin xyz="0.0045 0.007 0.09" rpy="0 0 0" />
     </joint>
 
@@ -217,7 +217,7 @@
         <parent link="arm_3" />
         <child link="claw_support" />
         <axis xyz="0 1 0 " />
-        <limit lower="-${pi/4}" upper="${pi/4}"  velocity="${velocity}" effort="${effort}" />
+        <limit lower="-${PI/4}" upper="${PI/4}"  velocity="${velocity}" effort="${effort}" />
         <origin xyz="-0.004 -0.015 0.03" rpy="0 0 0" />
     </joint>
 
@@ -225,7 +225,7 @@
         <parent link="claw_support" />
         <child link="gripper_right" />
         <axis xyz="1 0 0" />
-        <limit lower="-${pi/6}" upper="0"  velocity="${velocity}" effort="${effort}" />
+        <limit lower="-${PI/6}" upper="0"  velocity="${velocity}" effort="${effort}" />
         <origin xyz="0.015 0.004 0.065" rpy="0 0 0" />
     </joint>
 
@@ -234,7 +234,7 @@
         <parent link="claw_support" />
         <child link="gripper_left" />
         <axis xyz="1 0 0" />
-        <limit lower="0" upper="${pi/6}"  velocity="${velocity}" effort="${effort}" />
+        <limit lower="0" upper="${PI/6}"  velocity="${velocity}" effort="${effort}" />
         <origin xyz="0.015 -0.03 0.065" rpy="0 0 0" />
     </joint>
 

@@ -2,7 +2,7 @@
 
 <robot name="rca">    
     <group name="arm">
-        <joint name="virtual"/>
+        <joint name="virtual_joint"/>
         <joint name="joint_1"/>
         <joint name="joint_2"/>
         <joint name="joint_3"/>
