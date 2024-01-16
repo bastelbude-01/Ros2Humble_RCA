@@ -2,7 +2,7 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="rca">
     
     <gazebo>
-        <plugin filename="libgazebo_ros2_control.so" name="gazebo_ros2_control" >
+        <plugin filename="libgazebo_ros2_control.so" name="gazebo_ros2_control">
             <robot_param>robot_description</robot_param>
             <robot_param_node>robot_state_publisher</robot_param_node>
             <parameters>$(find rca_controller)/config/rca_controllers.yaml</parameters>

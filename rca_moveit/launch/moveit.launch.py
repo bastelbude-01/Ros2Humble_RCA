@@ -18,7 +18,12 @@ def generate_launch_description():
 
     moveit_config = (
         MoveItConfigsBuilder("rca", package_name="rca_moveit")
-        .robot_description(file_path=os.path.join(get_package_share_directory("rca_description"), "urdf", "rca.urdf.xacro"))
+        .robot_description(file_path=os.path.join(
+            get_package_share_directory("rca_description"),
+            "urdf",
+            "rca.urdf.xacro"
+        )
+        )
         .robot_description_semantic(file_path="config/rca.srdf")
         .trajectory_execution(file_path="config/moveit_controllers.yaml")
         .to_moveit_configs()
@@ -28,11 +33,13 @@ def generate_launch_description():
         package="moveit_ros_move_group",
         executable="move_group",
         output="screen",
-        parameters=[moveit_config.to_dict(), {"use_sim_time": is_sim},{"publish_robot_description_semantic": True}],
+        parameters=[moveit_config.to_dict(), {"use_sim_time": is_sim}, {
+            "publish_robot_description_semantic": True}],
         arguments=["--ros-args", "--log-level", "info"]
     )
 
-    rviz_config = os.path.join(get_package_share_directory("rca_moveit"), "config", "moveit.rviz")
+    rviz_config = os.path.join(get_package_share_directory(
+        "rca_moveit"), "config", "moveit.rviz")
 
     rviz_node = Node(
         package="rviz2",
