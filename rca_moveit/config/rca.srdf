@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<robot name="rca">
-
-    
+<robot name="rca">    
     <group name="arm">
         <joint name="virtual"/>
         <joint name="joint_1"/>
@@ -14,10 +12,8 @@
     </group>
 
     <group name="gripper">
-        <link name="gripper_right"/>
-        <link name="gripper_left"/>
-    <!--    <joint name="joint_6"/>
-        <joint name="joint_7"/> -->
+        <joint name="joint_6"/>
+        <!--<joint name="joint_7"/>-->
     </group>
 
 
