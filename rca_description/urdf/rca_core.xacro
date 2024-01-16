@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="rca">
 
 
     <!-- LINKS -->
@@ -185,7 +185,7 @@
         <parent link="base_link" />
         <child link="base_plate" />
         <axis xyz="0 0 1" />
-        <limit lower="${-pi/2}" upper="${pi/2}" velocity="${velocity}" effort="${effort}" />
+        <limit lower="-${pi/2}" upper="${pi/2}" velocity="${velocity}" effort="${effort}" />
         <origin xyz="0 0 0.129" rpy="0 0 0" />
     </joint>
 
@@ -193,7 +193,7 @@
         <parent link="base_plate" />
         <child link="arm_1" />
         <axis xyz="0 1 0 " />
-        <limit lower="${-pi/4}" upper="${pi/4}"  velocity="${velocity}" effort="${effort}" />
+        <limit lower="-${pi/4}" upper="${pi/4}"  velocity="${velocity}" effort="${effort}" />
         <origin xyz="0.014 0.004 0.04" rpy="0 0 0" />
     </joint>
 
@@ -209,7 +209,7 @@
         <parent link="arm_2" />
         <child link="arm_3" />
         <axis xyz="0 0 1 " />
-        <limit lower="${-pi/4}" upper="${pi/4}"  velocity="${velocity}" effort="${effort}" />
+        <limit lower="-${pi/4}" upper="${pi/4}"  velocity="${velocity}" effort="${effort}" />
         <origin xyz="0.0045 0.007 0.09" rpy="0 0 0" />
     </joint>
 
@@ -217,7 +217,7 @@
         <parent link="arm_3" />
         <child link="claw_support" />
         <axis xyz="0 1 0 " />
-        <limit lower="${-pi/4}" upper="${pi/4}"  velocity="${velocity}" effort="${effort}" />
+        <limit lower="-${pi/4}" upper="${pi/4}"  velocity="${velocity}" effort="${effort}" />
         <origin xyz="-0.004 -0.015 0.03" rpy="0 0 0" />
     </joint>
 
@@ -225,7 +225,7 @@
         <parent link="claw_support" />
         <child link="gripper_right" />
         <axis xyz="1 0 0" />
-        <limit lower="${-pi/6}" upper="0"  velocity="${velocity}" effort="${effort}" />
+        <limit lower="-${pi/6}" upper="0"  velocity="${velocity}" effort="${effort}" />
         <origin xyz="0.015 0.004 0.065" rpy="0 0 0" />
     </joint>
 

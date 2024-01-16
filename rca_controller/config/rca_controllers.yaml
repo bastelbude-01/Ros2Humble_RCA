@@ -31,7 +31,7 @@ arm_controller:
 
     open_loop_control: true
     allow_integration_in_goal_trajectories: true
-    allow_nonzero_velocity_at_trajectory_end: false
+    #allow_nonzero_velocity_at_trajectory_end: false
 
 gripper_controller:
   ros__parameters:
@@ -46,4 +46,4 @@ gripper_controller:
 
     open_loop_control: true
     allow_integration_in_goal_trajectories: true
-    allow_nonzero_velocity_at_trajectory_end: false
+    #allow_nonzero_velocity_at_trajectory_end: false

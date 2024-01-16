@@ -3,16 +3,16 @@
 
 
     <!-- Erst Material Laden.. -->
-    <xacro:include filename="material.xacro"/>
+    <xacro:include filename="$(find rca_description)/urdf/material.xacro"/>
 
     <!--  ..dann die STL Files zum visualisieren -->
-    <xacro:include filename="rca_core.xacro"/>
+    <xacro:include filename="$(find rca_description)/urdf/rca_core.xacro"/>
     
     <!-- Gazebo plugins -->
-    <xacro:include filename="gazebo.xacro"/> 
+    <xacro:include filename="$(find rca_description)/urdf/gazebo.xacro"/> 
 
     <!-- ROS2_Control -->
-    <xacro:include filename="ros2_control.xacro"/> 
+    <xacro:include filename="$(find rca_description)/urdf/ros2_control.xacro"/> 
 
     
 </robot>
