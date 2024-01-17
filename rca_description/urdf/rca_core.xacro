@@ -185,7 +185,7 @@
         <parent link="base_link" />
         <child link="base_plate" />
         <axis xyz="0 0 1" />
-        <limit lower="-${PI/2}" upper="${PI/2}" velocity="${velocity}" effort="${effort}" />
+        <limit lower="-${PI/4}" upper="${PI/4}" velocity="${velocity}" effort="${effort}" />
         <origin xyz="0 0 0.129" rpy="0 0 0" />
     </joint>
 
@@ -225,7 +225,7 @@
         <parent link="claw_support" />
         <child link="gripper_right" />
         <axis xyz="1 0 0" />
-        <limit lower="-${PI/6}" upper="0"  velocity="${velocity}" effort="${effort}" />
+        <limit lower="-${PI/6}" upper="0.0"  velocity="${velocity}" effort="${effort}" />
         <origin xyz="0.015 0.004 0.065" rpy="0 0 0" />
     </joint>
 
@@ -234,7 +234,7 @@
         <parent link="claw_support" />
         <child link="gripper_left" />
         <axis xyz="1 0 0" />
-        <limit lower="0" upper="${PI/6}"  velocity="${velocity}" effort="${effort}" />
+        <limit lower="0.0" upper="${PI/6}"  velocity="${velocity}" effort="${effort}" />
         <origin xyz="0.015 -0.03 0.065" rpy="0 0 0" />
     </joint>
 

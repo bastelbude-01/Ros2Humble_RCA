@@ -9,8 +9,8 @@ void move_robot(const std::shared_ptr<rclcpp::Node> node)
     auto arm_move_group = moveit::planning_interface::MoveGroupInterface(node, "arm");
     auto gripper_move_group = moveit::planning_interface::MoveGroupInterface(node, "gripper");
 
-    std::vector<double> arm_joint_goal {1.57, 0.0, 0.0, 0.0, 0.0};
-    std::vector<double> gripper_joint_goal {-0.5, 0.5};
+    std::vector<double> arm_joint_goal {0.3, 0.0, 0.0, 0.0, 0.0};
+    std::vector<double> gripper_joint_goal {0.0, 0.0};
 
     bool arm_within_bounds = arm_move_group.setJointValueTarget(arm_joint_goal);
     bool gripper_within_bounds = gripper_move_group.setJointValueTarget(gripper_joint_goal);
@@ -52,4 +52,5 @@ int main(int argc, char **argv)
   
   rclcpp::spin(node);
   rclcpp::shutdown();
+  return 0;
 }

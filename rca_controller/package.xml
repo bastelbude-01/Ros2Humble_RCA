@@ -3,9 +3,9 @@
   <name>rca_controller</name>
   <version>0.0.0</version>
   <description>The rca_controller package</description>
-  <maintainer email="messerschmidt.markus@web.de">Messerschmidt Markus</maintainer>
+  <maintainer email="mod3llfr3ak1mg3ist@web.de">ros2ws</maintainer>
   <license>Apache 2.0</license>
-  <author email="messerschmidt.markus@web.de">Messerschmidt Markus</author>
+  <author email="mod3llfr3ak1mg3ist@web.de">ros2ws</author>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
   <buildtool_depend>ament_cmake_python</buildtool_depend>
