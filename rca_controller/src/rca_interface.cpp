@@ -132,32 +132,32 @@ hardware_interface::return_type RcaInterface::write(const rclcpp::Time & time, c
     }
 
     std::string msg;
-    int base = static_cast<int>(((position_commands_.at(0) + (M_PI/2))*180)/M_PI);
+    int base = static_cast<int>(((position_commands_.at(0) + (M_PI/2))*180)/M_PI); // base
     msg.append("b");
     msg.append(std::to_string(base));
     msg.append(",");
 
-    int shoulder = 180 - static_cast<int>(((position_commands_.at(1)+(M_PI/2))*180)/M_PI);
+    int shoulder = 180 - static_cast<int>(((position_commands_.at(1)+(M_PI/2))*180)/M_PI); // arm1 lang
     msg.append("s");
     msg.append(std::to_string(shoulder));
     msg.append(",");
 
-    int arm = 180 - static_cast<int>(((position_commands_.at(2)+(M_PI/2))*180)/M_PI);
+    int arm = 180 - static_cast<int>(((position_commands_.at(2)+(M_PI/2))*180)/M_PI); // arm2 kurz
     msg.append("a");
     msg.append(std::to_string(arm));
     msg.append(",");
 
-    int elbow = static_cast<int>(((position_commands_.at(3) + (M_PI/2))+180)/M_PI);
-    msg.append("e");
-    msg.append(std::to_string(elbow));
-    msg.append(",");
-
-    int rotate = static_cast<int>(((position_commands_.at(4) + (M_PI/2))*180)/M_PI);
+    int rotate = static_cast<int>(((position_commands_.at(3) + (M_PI/2))*180)/M_PI);  // arm3 rotate
     msg.append("r");
     msg.append(std::to_string(rotate));
     msg.append(",");
 
-    int gripper = static_cast<int>((-position_commands_.at(5)*180)/(M_PI/2));
+    int elbow = static_cast<int>(((position_commands_.at(4) + (M_PI/2))+180)/M_PI);  // nick
+    msg.append("e");
+    msg.append(std::to_string(elbow));
+    msg.append(",");    
+
+    int gripper = static_cast<int>((-position_commands_.at(5)*180)/(M_PI/2));  // gripper
     msg.append("g");
     msg.append(std::to_string(gripper));
     msg.append(",");
