@@ -1,0 +1,10 @@
+<library path="rca_controller">
+    <class name="rca_controller/RcaInterface"
+            type="rca_controller::RcaInterface"
+            base_class_type="hardware_interface::SystemInterface">
+    <description>
+        Rca Hardware Interface
+    </description>
+
+    </class>
+</library>
