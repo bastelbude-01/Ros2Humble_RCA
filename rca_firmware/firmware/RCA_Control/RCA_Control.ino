@@ -9,9 +9,9 @@
 #define SERVO_GRIPPER_PIN 13
                             // Servo Start Position
 #define BASE_START 90
-#define SHOULDER_START 90
-#define ARM_START 90
-#define ROTATE_START 90
+#define SHOULDER_START 130
+#define ARM_START 175
+#define ROTATE_START 85
 #define ELBOW_START 90
 #define GRIPPER_START 90
                             // Servo Opjekt erstellen

@@ -11,53 +11,42 @@ threading.Thread(target=lambda: rclpy.init()).start()
 action_client = ActionClient(Node("own_interface"), RcaTask, "task_server")
 
 
-
-
-
 class LaunchRequestHandler():
-        pass
-        
-       # goal = RcaTask.Goal()
-       # goal.task_number = 0
-       # action_client.send_goal_async(goal)
-       # return handler_input.response_builder.response
+
+    pass
+
+   # goal = RcaTask.Goal()
+   # goal.task_number = 0
+   # action_client.send_goal_async(goal)
 
 
 class PickIntentHandler():
-    pass
-        
-        # goal = RcaTask.Goal()
-        # goal.task_number = 1
-        # action_client.send_goal_async(goal)
 
-        # return handler_input.response_builder.response
+    pass
+
+    # goal = RcaTask.Goal()
+    # goal.task_number = 1
+    # action_client.send_goal_async(goal)
 
 
 class SleepIntentHandler():
     pass
-        # goal = RcaTask.Goal()
-        # goal.task_number = 2
-        # action_client.send_goal_async(goal)
+    # goal = RcaTask.Goal()
+    # goal.task_number = 2
+    # action_client.send_goal_async(goal)
 
-        # return handler_input.response_builder.response
-    
 
 class WakeIntentHandler():
-        pass
+    pass
 
-        goal = RcaTask.Goal()
+#        goal = RcaTask.Goal()
 #        goal.task_number = 0
  #       action_client.send_goal_async(goal)
-  #      
-   #     return handler_input.response_builder.response
-    
+
+
 class AllExceptionHandler():
-        pass
-
-    
+    pass
 
 
-
-
-if __name__=='__main__':
+if __name__ == '__main__':
     pass

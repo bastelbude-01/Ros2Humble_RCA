@@ -16,6 +16,6 @@ def generate_launch_description():
 
     return LaunchDescription([
 
-        task_server_,
-        own_interface_node
+        task_server_#,
+        #own_interface_node
     ])

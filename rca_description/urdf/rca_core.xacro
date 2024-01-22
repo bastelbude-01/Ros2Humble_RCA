@@ -185,7 +185,7 @@
         <parent link="base_link" />
         <child link="base_plate" />
         <axis xyz="0 0 1" />
-        <limit lower="-${PI/4}" upper="${PI/4}" velocity="${velocity}" effort="${effort}" />
+        <limit lower="-${PI/2}" upper="${PI/2}" velocity="${velocity}" effort="${effort}" />
         <origin xyz="0 0 0.129" rpy="0 0 0" />
     </joint>
 
@@ -193,7 +193,7 @@
         <parent link="base_plate" />
         <child link="arm_1" />
         <axis xyz="0 1 0 " />
-        <limit lower="-${PI/4}" upper="${PI/4}"  velocity="${velocity}" effort="${effort}" />
+        <limit lower="-${PI/2}" upper="${PI/2}"  velocity="${velocity}" effort="${effort}" />
         <origin xyz="0.014 0.004 0.04" rpy="0 0 0" />
     </joint>
 
@@ -201,8 +201,8 @@
         <parent link="arm_1" />
         <child link="arm_2" />
         <axis xyz="0 1 0 " />
-        <limit lower="-${PI/6}" upper="${PI/2}"  velocity="${velocity}" effort="${effort}" />
-        <origin xyz="0 0 0.12" rpy="0 0 0" />
+        <limit lower="-${PI/2}" upper="${PI/2}"  velocity="${velocity}" effort="${effort}" />
+        <origin xyz="0 0 0.12" rpy="0 ${PI/4} 0" />
     </joint>
 
     <joint name="joint_4" type="revolute">
