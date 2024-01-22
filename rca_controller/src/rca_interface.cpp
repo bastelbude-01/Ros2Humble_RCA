@@ -162,6 +162,8 @@ hardware_interface::return_type RcaInterface::write(const rclcpp::Time & time, c
     msg.append(std::to_string(gripper));
     msg.append(",");
 
+    RCLCPP_WARN_STREAM(rclcpp::get_logger("RcaInterface"),"Versendete Nachricht -> " << msg);
+
     try
     {
         arduino_.Write(msg);
