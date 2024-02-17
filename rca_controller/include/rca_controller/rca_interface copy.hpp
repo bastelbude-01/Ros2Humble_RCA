@@ -7,7 +7,6 @@
 #include <vector>
 #include <libserial/SerialPort.h>
 #include <string>
-#include "rclcpp_lifecycle/lifecycle_node.hpp"
 
 
 namespace rca_controller
@@ -15,7 +14,7 @@ namespace rca_controller
 
 using CallbackReturn = rclcpp_lifecycle::node_interfaces::LifecycleNodeInterface::CallbackReturn;
 
-class RcaInterface : public hardware_interface::SystemInterface , rclcpp_lifecycle::LifecycleNode
+class RcaInterface : public hardware_interface::SystemInterface
 {
 public:
     RcaInterface();
@@ -35,7 +34,6 @@ public:
 private:
     LibSerial::SerialPort arduino_;
     std::string port_;
-    rclcpp_lifecycle::LifecycleNode base_publisher_;
 
     std::vector<double> position_commands_;
     std::vector<double> prev_position_commands_;

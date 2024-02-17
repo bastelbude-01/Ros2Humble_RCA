@@ -50,6 +50,11 @@ void reach_goal(Servo& motor, int goal)
 
 void setup() {
                             // Servo Anschluss
+                            /*FEHLER SUCHE
+                            DA DER ROBOTER ARM SEINE  POSITION NICHT HÄLT, SOLLTEN MIN UND MAX WERTE EINGETRAGEN WERDEN 
+                            DEFAULT 544 - 2400
+                            1000 - 2000 TESTEN
+                            */
   base.attach(SERVO_BASE_PIN);
   shoulder.attach(SERVO_SHOULDER_PIN);
   arm.attach(SERVO_ARM_PIN);
