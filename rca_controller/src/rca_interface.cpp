@@ -80,8 +80,6 @@ std::vector<hardware_interface::CommandInterface> RcaInterface::export_command_i
 CallbackReturn RcaInterface::on_activate(const rclcpp_lifecycle::State & previous_state) 
 {
 
-    base_publisher_ =  this->create_publisher<std_msgs::msg::Float32>("number", 10);
-
     RCLCPP_INFO(rclcpp::get_logger("RcaInterface"),"Arm Hardware wird gestartet... Bitte Warten...");
     position_commands_ = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
     prev_position_commands_ = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
