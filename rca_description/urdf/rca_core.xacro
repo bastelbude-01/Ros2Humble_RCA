@@ -32,7 +32,7 @@
                 <mesh filename="package://rca_description/meshes/Waist.stl"
                     scale="0.001 0.001 0.001" />
             </geometry>
-            <material name="blue" />
+            <material name="black" />
         </visual>
         <collision>
             <origin xyz="0.0 0.0 0" rpy="${PI/2} 0.0 ${-PI/2}" />
@@ -51,7 +51,7 @@
                 <mesh filename="package://rca_description/meshes/Arm_01.stl"
                     scale="0.001 0.001 0.001" />
             </geometry>
-            <material name="white" />
+            <material name="red" />
         </visual>
         <collision>
             <origin xyz="0.0 -0.001 0" rpy="${PI/2} 0 0" />
@@ -70,7 +70,7 @@
                 <mesh filename="package://rca_description/meshes/Arm_02.stl"
                     scale="0.001 0.001 0.001" />
             </geometry>
-            <material name="white" />
+            <material name="red" />
         </visual>
         <collision>
             <origin xyz="0 0.0018 0.035" rpy="${PI/2} 0 ${PI}" />
@@ -89,7 +89,7 @@
                 <mesh filename="package://rca_description/meshes/Arm_03.stl"
                     scale="0.001 0.001 0.001" />
             </geometry>
-            <material name="white" />
+            <material name="red" />
         </visual>
         <collision>
             <origin xyz="-0.0035 0 0.0015" rpy="${PI/2} 0 ${PI}" />
@@ -127,7 +127,7 @@
                 <mesh filename="package://rca_description/meshes/Gripper_1.stl"
                     scale="0.001 0.001 0.001" />
             </geometry>
-            <material name="white" />
+            <material name="red" />
         </visual>
         <collision>
             <origin xyz="0 -0.003 -0.0065" rpy="${-PI/8} ${PI} 0" />
@@ -146,7 +146,7 @@
                 <mesh filename="package://rca_description/meshes/Gripper_1_1.stl"
                     scale="0.001 0.001 0.001" />
             </geometry>
-            <material name="white" />
+            <material name="red" />
         </visual>
         <collision>
             <origin xyz="-0.008 0.003 -0.0063" rpy="${-PI/8} ${PI} ${PI}" />

@@ -14,6 +14,14 @@
         <color rgba="0.0 0.0 1.0 0.8"/>
     </material>
 
+    <material name="black">
+        <color rgba="0.0 0.0 0.0 1.0"/>
+    </material>
+
+    <material name="red">
+        <color rgba="1.0 0.0 0.0 0.8"/>
+    </material>
+
     <!-- Inertial-->
 
     <xacro:macro name="default_inertial" params="mass"> <!-- <xacro:default_inertial mass="1.0"/> -->
