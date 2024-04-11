@@ -2,13 +2,11 @@
 #include <hardware_interface/types/hardware_interface_type_values.hpp>
 #include <pluginlib/class_list_macros.hpp>
 #include "std_msgs/msg/float32.hpp"
-#include "rclcpp_lifecycle/lifecycle_node.hpp"
 
 namespace rca_controller
 {
 RcaInterface::RcaInterface()
 {
-    rclcpp_lifecycle::LifecycleNode;
 
 }
 
