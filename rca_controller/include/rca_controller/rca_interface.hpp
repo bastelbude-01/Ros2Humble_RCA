@@ -35,7 +35,6 @@ public:
 private:
     LibSerial::SerialPort arduino_;
     std::string port_;
-    rclcpp_lifecycle::LifecycleNode base_publisher_;
 
     std::vector<double> position_commands_;
     std::vector<double> prev_position_commands_;
